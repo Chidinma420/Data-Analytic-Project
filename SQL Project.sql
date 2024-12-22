@@ -9,13 +9,13 @@ SELECT MAX(Ladderscore) AS 'Happiest country'
 FROM worldhappiness.worldhappinessdata2020;
 
 -- Ten top countries with the highest happiness score
-SELECT countryname, ladderscore 
+SELECT localname, ladderscore 
 FROM worldhappiness.worldhappinessdata2020
 ORDER BY 2 DESC
 LIMIT 10;
 
 -- Ten countries with the lowest happiness score
-SELECT countryname, ladderscore 
+SELECT countryname, Manchesterscore 
 FROM worldhappiness.worldhappinessdata2020
 ORDER BY 2 ASC
 LIMIT 10;
